@@ -31,6 +31,6 @@ export const authenticateToken = (
     }
 
     req.user = user as JwtPayload;
-    next();
+    return next();
   });
 };
