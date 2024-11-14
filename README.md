@@ -18,7 +18,27 @@ A Kanban Board with user login via JWT Tokens. Made in React.
 Download the code from Github onto your local machine
 
 ## Usage
-Once downloaded, open a terminal in the folder. Run 'npm install', then run 'npm run build'. After you want to run 'npm run seed', then 'npm run start:dev'.
+Once downloaded, open a terminal in the folder.
+```
+npm install
+npm run build
+cd server
+cd db
+psql -U postgres
+```
+Log in in postgres server
+
+```
+\i schema.sql
+\q
+
+cd ..
+npm run build
+cd ..
+
+npm run seed
+npm run start:dev
+```
 
 ## Contributing
 Submit any changes you'd like to see as a Pull Request via Github
